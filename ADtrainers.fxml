@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymmanagementsystem.ADtrainersController">
+   <children>
+      <VBox prefHeight="469.0" prefWidth="163.0" style="-fx-spacing: 10;" styleClass="Admin-form" stylesheets="@StyleSheet.css">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/user%20(2).png" />
+               </image>
+            </ImageView>
+            <Line endX="77.0" startX="-100.0" stroke="WHITE" />
+            <VBox prefHeight="332.0" prefWidth="178.0">
+               <children>
+                  <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="83.0" prefWidth="163.0" styleClass="nav-btn" stylesheets="@StyleSheet.css" text="Home">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/home%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnMembers" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="83.0" prefWidth="157.0" styleClass="nav-btn" stylesheets="@StyleSheet.css" text="Members">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/people.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnTrainers" mnemonicParsing="false" prefHeight="83.0" prefWidth="157.0" styleClass="nav-btn" stylesheets="@StyleSheet.css" text="Trainers">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/team.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnClass" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="83.0" prefWidth="165.0" styleClass="nav-btn" stylesheets="@StyleSheet.css" text="Clasess">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnService" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="51.0" prefWidth="177.0" styleClass="nav-btn" stylesheets="@StyleSheet.css" text="Service">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/discount.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnProfile" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="83.0" prefWidth="162.0" styleClass="nav-btn" stylesheets="@StyleSheet.css" text="Profile">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/user-setting.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#handleButtonAction" styleClass="logoutbtn" stylesheets="@StyleSheet.css" text="Logout">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="469.0" prefWidth="451.0" style="-fx-spacing: 30; -fx-padding: 12;">
+         <children>
+            <TableView fx:id="trainetsList" onMouseClicked="#rowSelected" prefHeight="365.0" prefWidth="406.0" styleClass="table_view" stylesheets="@StyleSheet.css">
+               <columns>
+                  <TableColumn fx:id="Cid" prefWidth="31.0" text="id" />
+                  <TableColumn fx:id="Cname" prefWidth="56.0" text="Name" />
+                  <TableColumn fx:id="Cphone" text="phone num" />
+                  <TableColumn fx:id="Cemail" prefWidth="74.5" text="Email" />
+                  <TableColumn fx:id="Cusername" prefWidth="69.0" text="Username" />
+                  <TableColumn fx:id="Cpassword" prefWidth="102.5" text="Password" />
+                  <TableColumn fx:id="Cshift" prefWidth="49.5" text="Shift" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="469.0" prefWidth="269.0" style="-fx-spacing: 15; -fx-padding: 5;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="124.0" prefWidth="309.0">
+               <children>
+                  <GridPane alignment="CENTER" prefHeight="154.0" prefWidth="457.0" style="-fx-vgap: 20; -fx-hgap: 0;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label styleClass="infoMember" stylesheets="@StyleSheet.css" text="Name" textFill="#7a7b8a">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="infoMember" stylesheets="@StyleSheet.css" text="Phone Number" GridPane.rowIndex="1" />
+                        <Label styleClass="infoMember" stylesheets="@StyleSheet.css" text="Email" GridPane.rowIndex="2" />
+                        <Label styleClass="infoMember" stylesheets="@StyleSheet.css" text="Username" GridPane.rowIndex="3" />
+                        <Label styleClass="infoMember" stylesheets="@StyleSheet.css" text="Password" GridPane.rowIndex="4" />
+                        <TextField fx:id="tfName" prefHeight="2.0" prefWidth="127.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="tfPhonenum" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="tfUsername" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="tfEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="tfPassword" prefHeight="25.0" prefWidth="184.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="48.0" prefWidth="238.0" style="-fx-spacing: 50;">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="126.0" styleClass="infoMember" stylesheets="@StyleSheet.css" text="Trainer Shift" />
+                  <VBox prefHeight="134.0" prefWidth="180.0">
+                     <children>
+                        <RadioButton fx:id="shift1" mnemonicParsing="false" selected="true" text="7 - 3">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="ShiftGroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="shift2" mnemonicParsing="false" text="3 - 11" toggleGroup="$ShiftGroup" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="232.0" style="-fx-spacing: 10;">
+               <children>
+                  <Button fx:id="btnupdate" mnemonicParsing="false" onAction="#updateTrainer" style="-fx-background-color: #ffffff; -fx-text-fill: #8b7b8b; -fx-border-color: #c0b8bb; -fx-border-radius: 30; -fx-background-radius: 30;" text="Update">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#deleteTrainer" style="-fx-background-color: #ffffff; -fx-text-fill: #8b7b8b; -fx-border-color: #c0b8bb; -fx-border-radius: 30; -fx-background-radius: 30;" text="Delete">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="btnAddTrainer" mnemonicParsing="false" onAction="#addTrainer" style="-fx-background-color: #ffffff; -fx-text-fill: #8b7b8b; -fx-border-color: #c0b8bb; -fx-border-radius: 30; -fx-background-radius: 30;" text="Add New Trainer">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</HBox>

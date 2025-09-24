@@ -1,0 +1,112 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 26, 2024, 4:05:39 PM
+    Author     : Ralru
+*/
+
+.left-form {
+    -fx-background-color:linear-gradient(to bottom right ,#8b7b8b ,   #d8d3d5);
+    -fx-alignment: CENTER_LEFT;
+}
+
+.nav-btn{
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-fill: #ffffff ;
+    -fx-font-size : 17px ;
+    -fx-font-family : "Arial";
+}
+
+.textStyle{
+    -fx-text-fill: #8b7b8b;
+    -fx-font-family : "Arial";
+     -fx-font-size : 14px ;
+}
+
+.logoutbtn{
+    -fx-background-color: transparent;
+    -fx-alignment: BOTTOM_LEFT;
+    -fx-text-fill: #ffffff ;
+    -fx-font-size : 14px ;
+    -fx-font-family : "Arial";
+    -fx-font-weight : BOLD;
+    
+}
+.btn{
+     -fx-text-fill: #ffffff;
+    -fx-font-family : "Arial";
+     -fx-font-size : 14px ;
+     -fx-background-color: #8b7b8b;
+     -fx-font-weight : BOLD;
+}
+
+.welcomeMessage{
+    -fx-font-family : "Cambria";
+     -fx-font-size : 19px ;
+     -fx-font-weight : BOLD;
+     -fx-font-style : italic;
+     -fx-fill: #848593;
+}
+
+.Admin-form {
+    -fx-background-color:linear-gradient(to bottom right ,#8b7b8b ,   #d8d3d5);
+    -fx-alignment: CENTER;
+}
+
+.table_view{
+     -fx-background-color: transparent;
+    -fx-padding: 0px;
+    -fx-border-color: linear-gradient(to bottom right ,#8b7b8b ,   #d8d3d5);
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    
+}
+.table_view .table-column{
+    -fx-alignment: CENTER;
+}
+.table_view .column-header-background{
+    -fx-background-color: #c0b8bb;
+}
+.table_view .column-header, .filter{
+    -fx-background-color:transparent;
+}
+.table_view .column-header .label{
+    -fx-text-fill: #ffffff;
+    -fx-font-family : "Arial";
+}
+.infoMember{
+    -fx-text-fill: #8b7b8b;
+    -fx-font-family : "Arial";
+     -fx-font-size : 11px ;
+}
+.bk{
+   
+    -fx-background-color :#e3dae1;
+}
+.txt2{
+    
+     -fx-font-family : "Fantasy";
+     -fx-font-size : 19px ;
+     -fx-font-weight : BOLD;
+     -fx-font-style : italic;
+     -fx-fill: #403c3f;
+    
+    
+}
+
+.col{
+    
+      -fx-background-color: transparent;
+    -fx-padding: 0px;
+    -fx-border-color: linear-gradient(to bottom right ,#8b7b8b ,   #d8d3d5);
+}
+
+.btn4{
+    
+    
+       -fx-background-color :#c0b8bb;
+ 
+}

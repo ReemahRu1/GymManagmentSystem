@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymmanagementsystem.TaddSesstionController">
+   <children>
+      <GridPane layoutX="73.0" layoutY="32.0" prefHeight="318.0" prefWidth="425.0" style="-fx-vgap: 10;" styleClass="nav-btn" stylesheets="@StyleSheet.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="134.0" minHeight="0.3333384195963518" prefHeight="53.66667175292969" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="134.0" minHeight="0.0" prefHeight="46.333343505859375" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="134.0" minHeight="10.0" prefHeight="61.00001017252603" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="202.0" minHeight="10.0" prefHeight="37.666666666666686" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="202.0" minHeight="10.0" prefHeight="69.33331298828125" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="202.0" minHeight="10.0" prefHeight="66.33333333333331" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="202.0" minHeight="10.0" prefHeight="37.666666666666686" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="descreptionTextFeild" stylesheets="@StyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text fill="#7a7b8a" strokeType="OUTSIDE" strokeWidth="0.0" text="Name Of Session :" wrappingWidth="185.47006225585938">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#7a7b8a" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :" wrappingWidth="199.47000122070312" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#7b7c8a" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Class Room :" wrappingWidth="193.47006225585938" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#7a7b8a" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Time :" wrappingWidth="209.47006225585938" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#7a7b8a" strokeType="OUTSIDE" strokeWidth="0.0" text="Number Of Person Each Session:" wrappingWidth="204.13674926757812" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="namesessiom" styleClass="label" stylesheets="@StyleSheet.css" GridPane.columnIndex="1" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-spacing: 10;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <Button fx:id="addbackbtn" mnemonicParsing="false" onAction="#BackmanageAAction" prefHeight="35.0" prefWidth="71.0" style="-fx-border-radius: 200;" styleClass="btn" stylesheets="@StyleSheet.css" text="add" textFill="#360c2d" />
+               </children>
+            </VBox>
+            <Text fill="#7a7b8a" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Day :" wrappingWidth="209.47006225585938" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="rooms" prefHeight="31.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="persons" stylesheets="@StyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="times" stylesheets="@StyleSheet.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="days" prefHeight="31.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
